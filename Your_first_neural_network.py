@@ -348,8 +348,8 @@ import sys
 
 ### TODO:Set the hyperparameters here, you need to change the defalut to get a better solution ###
 iterations = 10000
-learning_rate = 0.5
-hidden_nodes = 4
+learning_rate = 0.8
+hidden_nodes = 10
 output_nodes = 1
 
 N_i = train_features.shape[1]
