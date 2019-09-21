@@ -347,8 +347,8 @@ unittest.TextTestRunner().run(suite)
 import sys
 
 ### TODO:Set the hyperparameters here, you need to change the defalut to get a better solution ###
-iterations = 1000
-learning_rate = 0.8
+iterations = 10000
+learning_rate = 0.5
 hidden_nodes = 4
 output_nodes = 1
 
@@ -412,8 +412,6 @@ _ = ax.set_xticklabels(dates[12::24], rotation=45)
 # > **注意**：你可以通过双击该单元编辑文本。如果想要预览文本，请按 Control + Enter
 # 
 # #### 请将你的答案填写在下方
-# 答：模型的预测结果是符合实际使用的趋势的。
-# * 但是测试集数据前半部分，实际使用量 > 模型预测；
-# * 测试集数据后半部分，实际使用量 < 模型预测；
-# * 我认为出现这种结果，是模型对所有训练数据的误差进行权衡的结果。
+# 答：模型的预测结果是符合实际使用的趋势的。但是在圣诞节附近出现较大的误差，原因猜测如下：
+# * 我们的输入只有节假日，圣诞节并未单独给模型考虑；而且在训练集里，圣诞节只出现了一次。
 # 
